@@ -173,7 +173,7 @@ export default function MyLifeScreen({ photos, onPhotosChange, onPlayWithPhotos 
           <div style={{ display:"flex", gap:8, marginBottom:20 }}>
             {[{id:"questions",label:"❓ Life Questions"},{id:"selfvoice",label:"🎙 My Voice"}].map(st => (
               <button key={st.id} onClick={() => setStoryTab(st.id)} style={{
-                flex:1, border:"none", borderRadius:14, padding:"12px 8px", fontSize:14,
+                flex:1, borderRadius:14, padding:"12px 8px", fontSize:14,
                 fontWeight:700, cursor:"pointer",
                 background: storyTab===st.id ? G.primary : G.card,
                 color: storyTab===st.id ? "#fff" : G.textSoft,
